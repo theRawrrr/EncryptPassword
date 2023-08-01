@@ -85,15 +85,6 @@ function finallyGenerate(val) {
                 }
             }
             break;
-        case "SHA-1":
-            {
-                try {
-                    hash = CryptoJS.SHA1(val);
-                } catch (e) {
-                    newAlert.unknown();
-                }
-            }
-            break;
         case "SHA-512":
             {
                 try {
@@ -107,15 +98,6 @@ function finallyGenerate(val) {
             {
                 try {
                     hash = CryptoJS.SHA256(val);
-                } catch (e) {
-                    newAlert.unknown();
-                }
-            }
-            break;
-        case "RIPEMD-160":
-            {
-                try {
-                    hash = CryptoJS.RIPEMD160(val);
                 } catch (e) {
                     newAlert.unknown();
                 }
